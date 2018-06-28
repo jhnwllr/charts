@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highcharts Cloud</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content='My Chart'/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content='' />
+    <meta property="og:url" content='' />
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:site" content="@Highcharts" />
+    <meta name="twitter:title" content='My Chart' />
+    <meta name="twitter:image" content='' />
+    <meta name="twitter:url" content='' />
+
+    <script type="text/javascript" src="https://code.highcharts.com/stock/highstock.js"></script> <!-- TODO Include smart compiled highcharts based on features etc. -->
+
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/funnel.js"></script>
+  <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <script src="https://code.highcharts.com/modules/annotations.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  
+  <!-- <script src="https://code.highcharts.com/modules/series-label.js"></script> -->
+
+  <style type="text/css">
+      body {
+        background-color: transparent;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+
+      #container .highcharts-container {
+        margin: 0 auto;
+      }
+    </style>
+
+</head>
+<body>
+
+<div id="container" style="width:100%; height:100%;max-width:1000px;margin: 0 auto"></div>
+
+<script type="text/javascript">
+
+var options = {"title":{"text":"My Chart"},"subtitle":{"text":"My Untitled Chart"},"exporting":{},"yAxis":[{"title":{}}],"chart":{},"credits":{"enabled":true,"text":"Powered by Highcharts Cloud","href":"","style":{"font-size":"16px"}}};
+var chart;
+var encodedUrl = encodeURI('');
+
+if (options.yAxis && options.yAxis.length === 1) options.yAxis = options.yAxis[0];
+if (options.xAxis && options.xAxis.length === 1) options.xAxis = options.xAxis[0];
+if (options.zAxis && options.zAxis.length === 1) options.zAxis = options.zAxis[0];
+
+new Highcharts.Chart('container', options);
+
+
+</script>
+
+</body>
+</html>
